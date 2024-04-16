@@ -1,0 +1,28 @@
+spring:
+  application:
+    name:chat-hub-backend
+# DataSource Config
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://58.87.96.86:3306/chat-hub
+    username: root
+    password: Ccjy88007886
+# session 失效时间
+  session:
+    timeout: 86400
+# MyBatis-Plus Config
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+# Port
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
