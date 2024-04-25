@@ -7,14 +7,8 @@
     <list default="true" id="e8cc644a-8bd7-4dcc-a95b-aee5cc343401" name="更改" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/components.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/components.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/src/layout/BasicLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/src/layout/BasicLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/Team.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/Team.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cjy/chathubbackend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjy/chathubbackend/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,33 +58,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/chenjiangyu/Project/IdeaProjects/chat-hub/chat-hub-backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;99e722cc2db888b33307b4a9f01c5621&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/Users/chenjiangyu/Project/IdeaProjects/chat-hub/chat-hub-backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.47011495",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "99e722cc2db888b33307b4a9f01c5621",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -180,8 +178,17 @@
       <workItem from="1713232510362" duration="325000" />
       <workItem from="1713232992747" duration="13340000" />
       <workItem from="1713275642529" duration="4262000" />
-      <workItem from="1713965464533" duration="3026000" />
+      <workItem from="1713965464533" duration="5702000" />
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <option name="closed" value="true" />
+      <created>1714013667640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714013667640</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

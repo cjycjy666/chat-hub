@@ -9,7 +9,6 @@ import com.cjy.chathubbackend.model.request.UserLoginRequest;
 import com.cjy.chathubbackend.model.request.UserRegisterRequest;
 import com.cjy.chathubbackend.service.UserService;
 import com.cjy.chathubbackend.utils.ResultUtils;
-import io.swagger.annotations.Api;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
 import org.apache.commons.lang3.StringUtils;
