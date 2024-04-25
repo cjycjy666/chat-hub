@@ -2,8 +2,10 @@
 主页
 </template>
 
-<script setup lang="ts">
-
+<script>
+export default {
+  name: "Index"
+}
 </script>
 
 <style scoped>

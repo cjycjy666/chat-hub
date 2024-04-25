@@ -12,35 +12,32 @@
       <van-icon name="search" size="18" />
     </template>
   </van-nav-bar>
+
+<!--  内容-->
   <div id="content">
-    <template v-if="active === 'index'">
-      <Index />
-    </template>
-    <template v-if="active === 'team'">
-      <Team />
-    </template>
+    <router-view />
   </div>
 
 <!--  底部菜单栏-->
-  <van-tabbar v-model="active" @change="onChange">
-    <van-tabbar-item icon="home-o" name="index">主页</van-tabbar-item>
-    <van-tabbar-item icon="search" name="team">队伍</van-tabbar-item>
-    <van-tabbar-item icon="friends-o" name="chat">聊天</van-tabbar-item>
-    <van-tabbar-item icon="setting-o" name="user">自己</van-tabbar-item>
+  <van-tabbar route>
+    <van-tabbar-item to="/" icon="home-o" name="index">主页</van-tabbar-item>
+    <van-tabbar-item to="/team" icon="search" name="team">队伍</van-tabbar-item>
+    <van-tabbar-item to="/chat" icon="friends-o" name="chat">聊天</van-tabbar-item>
+    <van-tabbar-item to="/user" icon="setting-o" name="user">自己</van-tabbar-item>
   </van-tabbar>
 </template>
 
+
 <script setup>
 // import
-import { ref } from 'vue';
-import { Toast } from 'vant';
-import Index from "../pages/Index.vue";
-import Team from "../pages/Team.vue";
+import {useRouter} from "vue-router";
+
+const router = useRouter();
 //导航栏
 const onClickLeft = () => history.back();
-//菜单栏
-const active = ref("index");
-const onChange = (index) => Toast(`标签 ${index}`);
+const onClickRight = () => {
+  router.push('/search')
+}
 </script>
 
 
