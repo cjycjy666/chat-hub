@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8cc644a-8bd7-4dcc-a95b-aee5cc343401" name="更改" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/75a88e98-88ee-478b-bf80-a23025b0edc6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/75a88e98-88ee-478b-bf80-a23025b0edc6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/75a88e98-88ee-478b-bf80-a23025b0edc6/storage_v2/_src_/schema/chat-hub.ADGbVQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/75a88e98-88ee-478b-bf80-a23025b0edc6/storage_v2/_src_/schema/chat-hub.ADGbVQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cjy/chathubbackend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjy/chathubbackend/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cjy/chathubbackend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjy/chathubbackend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cjy/chathubbackend/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjy/chathubbackend/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cjy/chathubbackend/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cjy/chathubbackend/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cjy/chathubbackend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cjy/chathubbackend/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cjy/chathubbackend/service/impl/UserServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cjy/chathubbackend/service/impl/UserServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cjy/chathubbackend/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cjy/chathubbackend/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/components.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/components.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/src/config/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/src/config/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/src/models/user.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/src/models/user.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/Search.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/SearchResultPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/SearchResultPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/UserEditPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/UserEditPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/UserPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/src/pages/UserPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-hub-frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-hub-frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,37 +79,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/chenjiangyu/Project/IdeaProjects/chat-hub/chat-hub-backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "库",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.47011495",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "99e722cc2db888b33307b4a9f01c5621",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chenjiangyu/Project/IdeaProjects/chat-hub/chat-hub-backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.47011495&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;99e722cc2db888b33307b4a9f01c5621&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -178,7 +199,12 @@
       <workItem from="1713232510362" duration="325000" />
       <workItem from="1713232992747" duration="13340000" />
       <workItem from="1713275642529" duration="4262000" />
-      <workItem from="1713965464533" duration="5702000" />
+      <workItem from="1713965464533" duration="6297000" />
+      <workItem from="1714196919239" duration="11728000" />
+      <workItem from="1714739084467" duration="2448000" />
+      <workItem from="1714745377973" duration="1361000" />
+      <workItem from="1714794235017" duration="10247000" />
+      <workItem from="1714815422821" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />

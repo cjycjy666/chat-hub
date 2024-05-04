@@ -793,8 +793,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="227" parent="1" name="chat-hub">
       <Current>1</Current>
-      <IntrospectionTimestamp>2024-04-16.18:22:03</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-04-16.02:22:03</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2024-04-27.21:50:40</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-04-27.05:50:40</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="228" parent="1" name="dormitory-management">
@@ -993,12 +993,17 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <DasType>varchar(1024)|0s</DasType>
       <Position>14</Position>
     </column>
-    <index id="268" parent="240" name="PRIMARY">
+    <column id="268" parent="240" name="profile">
+      <Comment>个人简介</Comment>
+      <DasType>varchar(512)|0s</DasType>
+      <Position>15</Position>
+    </column>
+    <index id="269" parent="240" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="269" parent="240" name="PRIMARY">
+    <key id="270" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

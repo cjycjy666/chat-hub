@@ -15,7 +15,7 @@
   <div v-if="activeIds.length === 0" style="padding: 10px">请选择标签</div>
   <van-row justify="space-around" :gutter="[10, 10]" style="padding: 10px">
     <van-col>
-      <van-tag v-for="tag in activeIds" closeable size="medium" round type="primary" @close="doClose(tag)">
+      <van-tag v-for="tag in activeIds" closeable size="medium" round type="primary" @close="doClose(tag)" style="margin-right: 5px">
         {{ tag }}
       </van-tag>
     </van-col>
@@ -27,7 +27,9 @@
       v-model:main-active-index="activeIndex"
       :items="tagList"
   />
-  <van-button type="primary" @click="doSearchResult">搜索</van-button>
+  <div style="padding: 20px">
+    <van-button block type="primary" @click="doSearchResult">搜索</van-button>
+  </div>
 </template>
 
 <script setup lang="ts">

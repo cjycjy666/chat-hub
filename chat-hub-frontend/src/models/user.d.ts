@@ -5,7 +5,8 @@ export type Usertype = {
     id: number;
     username: string;
     userAccount: string;
-    avatarUrl: string;
+    avatarUrl?: string;
+    profile?: string;
     gender: number;
     phone: string;
     email: string;

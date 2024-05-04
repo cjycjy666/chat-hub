@@ -18,24 +18,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.DigestUtils;
+
 import java.util.List;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+import static com.cjy.chathubbackend.constant.UserConstant.ADMIN_ROLE;
 import static com.cjy.chathubbackend.constant.UserConstant.USER_LOGIN_STATE;
 
 /**
-* 用户服务实现类
-* @author chenjiangyu
-* @description 针对表【user(用户表)】的数据库操作Service实现
-* @createDate 2024-04-07 11:18:03
-*/
+ * 用户服务实现类
+ *
+ * @author chenjiangyu
+ * @description 针对表【user(用户表)】的数据库操作Service实现
+ * @createDate 2024-04-07 11:18:03
+ */
 @Service
 @Slf4j
 public class UserServiceImpl extends ServiceImpl<UserMapper, User>
-    implements UserService{
+        implements UserService {
     @Resource
     private UserMapper userMapper;
     /**
@@ -47,6 +50,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
 
     /**
      * 用户注册实现
+     *
      * @param userAccount   用户名
      * @param userPassword  密码
      * @param checkPassword 校验码
@@ -67,7 +71,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         //账户不包含特殊字符
         String validPattern = "[\\p{P}\\p{S}]";
         Matcher matcher = Pattern.compile(validPattern).matcher(userAccount);
-        if(matcher.find()) {
+        if (matcher.find()) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "账号不包含特殊字符");
         }
         //密码和校验码相同
@@ -96,9 +100,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
 
     /**
      * 用户登陆实现
+     *
      * @param userAccount  用户名
      * @param userPassword 密码
-     * @param request 用户登陆态
+     * @param request      用户登陆态
      * @return 脱敏用户信息
      */
     @Override
@@ -116,7 +121,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         //账户不包含特殊字符
         String validPattern = "[\\p{P}\\p{S}]";
         Matcher matcher = Pattern.compile(validPattern).matcher(userAccount);
-        if(matcher.find()) {
+        if (matcher.find()) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "账号不能包含特殊字符");
         }
         //2.匹配数据库查询密码
@@ -140,6 +145,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
 
     /**
      * 用户脱敏
+     *
      * @param originUser 原始用户数据
      * @return 脱敏数据
      */
@@ -162,6 +168,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
 
     /**
      * 用户注销
+     *
      * @param request HttpServletRequest
      */
     @Override
@@ -191,7 +198,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             if (StringUtils.isBlank(tagsStr)) {
                 return false;
             }
-            Set<String> tempTagNameSet = gson.fromJson(tagsStr, new TypeToken<Set<String>>(){}.getType());
+            Set<String> tempTagNameSet = gson.fromJson(tagsStr, new TypeToken<Set<String>>() {
+            }.getType());
             for (String tagName : tagNameList) {
                 if (!tempTagNameSet.contains(tagName)) {
                     return false;
@@ -199,6 +207,64 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             }
             return true;
         }).map(this::getSafetyUser).collect(Collectors.toList());
+    }
+
+    /**
+     * 修改用户信息
+     *
+     * @param user
+     * @param loginUser
+     * @return
+     */
+    @Override
+    public int updateUser(User user, User loginUser) {
+        long userId = user.getId();
+        if (userId <= 0) throw new BusinessException(ErrorCode.PARAMS_ERROR);
+        //管理员
+        if (isAdmin(loginUser)) {
+            User opeUser = userMapper.selectById(userId);
+            if (opeUser == null) throw new BusinessException(ErrorCode.NULL_ERROR);
+            return userMapper.updateById(user);
+        }
+        //非管理员
+        if (userId != loginUser.getId()) throw new BusinessException(ErrorCode.NO_AUTH);
+        User opeUser = userMapper.selectById(userId);
+        if (opeUser == null) throw new BusinessException(ErrorCode.NULL_ERROR);
+        return userMapper.updateById(user);
+    }
+
+    /**
+     * 获取当前用户
+     *
+     * @param request
+     * @return
+     */
+    @Override
+    public User getLoginUser(HttpServletRequest request) {
+        if (request == null) {
+            return null;
+        }
+        Object userObj = request.getSession().getAttribute(USER_LOGIN_STATE);
+        if (userObj == null) {
+            throw new BusinessException(ErrorCode.NO_AUTH);
+        }
+        return (User) userObj;
+    }
+
+    /**
+     * 是否为管理员
+     *
+     * @param request HttpServletRequest
+     * @return true/false
+     */
+    public boolean isAdmin(HttpServletRequest request) {
+        Object userObj = request.getSession().getAttribute(USER_LOGIN_STATE);
+        User user = (User) userObj;
+        return user != null && user.getUserRole() == ADMIN_ROLE;
+    }
+
+    public boolean isAdmin(User loginUser) {
+        return loginUser != null && loginUser.getUserRole() == ADMIN_ROLE;
     }
 }
 

@@ -1,15 +1,23 @@
 spring:
   application:
     name:chat-hub-backend
-# DataSource Config
+  # DataSource Config
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://58.87.96.86:3306/chat-hub
     username: root
     password: Ccjy88007886
-# session 失效时间
+  # Redis 配置
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+  # session
   session:
     timeout: 86400
+    store-type: redis
+
 # MyBatis-Plus Config
 mybatis-plus:
   configuration:
@@ -25,6 +33,9 @@ server:
   port: 8080
   servlet:
     context-path: /api
+    session:
+      cookie:
+        domain: localhost
 
 # 接口文档配置
 springdoc:
@@ -38,8 +49,4 @@ springdoc:
     - group: 'default'
       paths-to-match: '/**'
       packages-to-scan: com.cjy.chathubbackend.controller
-# knife4j的增强配置，不需要增强可以不配
-knife4j:
-  enable: true
-  setting:
-    language: zh_cn
+
